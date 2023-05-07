@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet"href="style.css" />
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description" >Please let us know how we can improve Leetcode by answering the following questions</p>
+  <form action="g.html" id="survey-form">
+  <fieldset>
+    <label for="name-label">Enter your first name:<input type="text" id="name" id="name-label" placeholder="First Name" required></label>
+    <label for="name-label">Enter your last name: <input type="text" name="name" id="name-label" placeholder="Last Name" required/></label>
+    <label for="email-label">Enter your email: <input type="email" name="email" id="email-label"placeholder="Email Address"required/> </label>
+    <label for="number-label">Enter your age: <input type="number" name="number" id="number-label" min="10" max="40" placeholder="Age" required /></label>
+  </fieldset>
+  <fieldset>
+    <label for="dropdown">How did you hear about Leetcode
+      <select id="dropdown" name="dropdown">
+        <option value="">(Select one)</option>
+        <option value="1">Youtube</option>
+        <option value="2">Google</option>
+        <option value="3">From a friend</option>
+        <option value="4">others</option>
+      </select>
+    </label>
+  </fieldset>
+  <fieldset>
+    <p>Please rate us</p>
+    <label for="rate"><input type="radio" id="rate" name="excellent"value="excellent" class="block-level" />Excellent</label>
+    <label for="rate"> <input type="radio" id="rate" name="Very good" value="Very good" class="block-level">Very Good</input></label>
+    <label for="rate"> <input type="radio" id="rate" name="poor" value="Poor" class="block-level">Poor</input></label>
+    <p>Where do you want us to improve?</p>
+    <label><input type="checkbox" name="checkbox" value="Front-end projects"/>Front-end project</label>
+    <label><input type="checkbox" name="checkbox" value="Back-end projects"/>Back-end project</label>
+    <label><input type="checkbox" name="checkbox" value="Forum"/>Forum</label>
+    <label><input type="checkbox" name="checkbox" value="Wiki"/>Wiki</label>
+    
+    <label for="bio">Any Comments or suggestions?
+      <textarea id="bio" name="bio"row="30"cols="50"placeholder="please type your suggestions here"></textarea>
+  </fieldset>
+  <input type="submit"value="submit" onsubmit="show()">
+  </form>
+</body>
+</html>
